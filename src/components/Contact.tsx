@@ -8,21 +8,21 @@ const contactOptions = [
     icon: Mail,
     title: "Start Project",
     description: "Have an idea? Let's bring it to life.",
-    action: "mailto:your.email@example.com?subject=New Project Inquiry",
+    action: "mailto:nikhilscaria10@gmail.com?subject=New Project Inquiry",
     buttonText: "Send Email",
   },
   {
     icon: MessageSquare,
     title: "Let's Talk",
     description: "Quick question or just want to say hi.",
-    action: "mailto:your.email@example.com?subject=Hello!",
+    action: "mailto:nikhilscaria10@gmail.com?subject=Hello!",
     buttonText: "Get in Touch",
   },
   {
     icon: Users,
     title: "Collaborations",
     description: "Open to exciting collaborations and partnerships.",
-    action: "mailto:your.email@example.com?subject=Collaboration Opportunity",
+    action: "mailto:nikhilscaria10@gmail.com?subject=Collaboration Opportunity",
     buttonText: "Collaborate",
   },
 ];
@@ -80,10 +80,10 @@ export default function Contact() {
         >
           <p className="text-muted mb-2">Or reach me directly at</p>
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:nikhilscaria10@gmail.com"
             className="text-xl font-medium hover:text-accent transition-colors"
           >
-            your.email@example.com
+            nikhilscaria10@gmail.com
           </a>
         </motion.div>
       </div>

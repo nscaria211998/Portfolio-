@@ -3,14 +3,14 @@
 import { motion } from "framer-motion";
 
 const badges = [
-  { emoji: "🤘", text: "40+ Clients" },
-  { emoji: "🕒", text: "2+ Years in Dev" },
-  { emoji: "📱", text: "15+ Live Products" },
-  { emoji: "📌", text: "React Expert" },
-  { emoji: "👌", text: "Pixel Perfect" },
-  { emoji: "🦄", text: "Full Stack Dev" },
-  { emoji: "⚡", text: "Lightning Fast Delivery" },
-  { emoji: "🧠", text: "Strategy Driven" },
+  { emoji: "🧠", text: "AI/ML Leader" },
+  { emoji: "🔬", text: "6 Patents Filed" },
+  { emoji: "🎤", text: "SCDM 2025 Speaker" },
+  { emoji: "👁️", text: "Computer Vision" },
+  { emoji: "🏥", text: "Healthcare AI" },
+  { emoji: "🤖", text: "Agentic AI" },
+  { emoji: "📊", text: "Clinical Data Science" },
+  { emoji: "🎓", text: "Purdue MS, GPA 3.9" },
 ];
 
 export default function Hero() {
@@ -53,7 +53,7 @@ export default function Hero() {
           transition={{ delay: 0.6 }}
           className="text-lg md:text-xl text-muted mb-12"
         >
-          Full-stack developer with a love for clean UI and fast apps
+          Senior Data Scientist at Alcon | AI/ML | Computer Vision | Digital Twins
         </motion.p>
 
         {/* CTA Buttons */}

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Linkedin, Twitter, ArrowUp } from "lucide-react";
+import { Github, Linkedin, ArrowUp } from "lucide-react";
 
 const navLinks = [
   { name: "Home", href: "#" },
@@ -12,9 +12,8 @@ const navLinks = [
 ];
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
+  { icon: Github, href: "https://github.com/nikhilscaria3", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/nscaria", label: "LinkedIn" },
 ];
 
 export default function Footer() {
@@ -34,7 +33,7 @@ export default function Footer() {
             className="text-center md:text-left"
           >
             <h3 className="text-xl font-bold gradient-text">Nikhil Scaria</h3>
-            <p className="text-muted text-sm mt-1">Full Stack Developer</p>
+            <p className="text-muted text-sm mt-1">Senior Data Scientist | AI/ML Engineer</p>
           </motion.div>
 
           {/* Navigation */}

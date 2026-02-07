@@ -4,19 +4,19 @@ import { motion } from "framer-motion";
 
 const stats = [
   {
-    number: "50+",
-    label: "Projects Launched",
-    icon: "🚀",
+    number: "6",
+    label: "Provisional Patents",
+    icon: "📜",
   },
   {
-    number: "40+",
-    label: "Clients Served",
-    icon: "🤝",
+    number: "4+",
+    label: "Years at Alcon",
+    icon: "🏥",
   },
   {
-    number: "96%",
-    label: "Satisfaction Rate",
-    icon: "⭐",
+    number: "3.9",
+    label: "Purdue GPA",
+    icon: "🎓",
   },
 ];
 

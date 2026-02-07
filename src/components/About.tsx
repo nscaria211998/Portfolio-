@@ -31,7 +31,7 @@ export default function About() {
             >
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-accent" />
-                <span className="text-sm">Your Location</span>
+                <span className="text-sm">Fort Worth, TX</span>
               </div>
             </motion.div>
 
@@ -42,7 +42,7 @@ export default function About() {
             >
               <div className="flex items-center gap-2">
                 <Calendar className="w-4 h-4 text-accent" />
-                <span className="text-sm">Since 2023</span>
+                <span className="text-sm">Since 2022</span>
               </div>
             </motion.div>
           </div>
@@ -60,30 +60,31 @@ export default function About() {
               </h2>
 
               <p className="text-muted mb-6 leading-relaxed">
-                I&apos;m a passionate full-stack developer who loves turning ideas into
-                beautiful, functional digital experiences. With expertise in modern
-                web technologies, I focus on creating applications that are not only
-                visually appealing but also performant and user-friendly.
+                I&apos;m a Senior Data Scientist at Alcon leading AI/ML initiatives across
+                modeling and simulation teams. I specialize in developing deep learning
+                algorithms for surgical applications, building digital twins for ophthalmology
+                devices, and translating physics-based simulations into deployable clinical tools.
               </p>
 
               <p className="text-muted mb-8 leading-relaxed">
-                My journey in development started with curiosity and has evolved into
-                a mission to build products that make a difference. I believe in clean
-                code, intuitive design, and continuous learning.
+                With a Master&apos;s from Purdue University in Industrial Engineering (Operations Research)
+                and 6 provisional patents in surgical AI, I&apos;m passionate about bringing cutting-edge
+                AI to healthcare. From intraoperative guidance systems to post-operative analysis
+                applications, I build solutions that improve surgical precision and patient outcomes.
               </p>
 
               <div className="flex flex-wrap gap-4">
                 <div className="flex items-center gap-2 px-4 py-2 bg-card border border-border rounded-full">
                   <Code className="w-4 h-4 text-accent" />
-                  <span className="text-sm">Clean Code Advocate</span>
+                  <span className="text-sm">MLOps Expert</span>
                 </div>
                 <div className="flex items-center gap-2 px-4 py-2 bg-card border border-border rounded-full">
-                  <span>🎨</span>
-                  <span className="text-sm">UI/UX Enthusiast</span>
+                  <span>👁️</span>
+                  <span className="text-sm">Computer Vision</span>
                 </div>
                 <div className="flex items-center gap-2 px-4 py-2 bg-card border border-border rounded-full">
-                  <span>🚀</span>
-                  <span className="text-sm">Performance Focused</span>
+                  <span>🏥</span>
+                  <span className="text-sm">Healthcare AI</span>
                 </div>
               </div>
             </motion.div>
@@ -99,7 +100,7 @@ export default function About() {
           className="mt-16 text-center"
         >
           <blockquote className="text-2xl md:text-3xl font-light text-muted italic">
-            &ldquo;Head in the cloud. Code on the ground.&rdquo;
+            &ldquo;Transforming surgical precision through the power of AI.&rdquo;
           </blockquote>
           <p className="mt-4 text-accent">— Nikhil Scaria</p>
         </motion.div>

@@ -8,11 +8,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Nikhil Scaria | Full Stack Developer",
-  description: "Full-stack developer with a love for clean UI and fast apps",
+  title: "Nikhil Scaria | Senior Data Scientist & AI/ML Engineer",
+  description: "Senior Data Scientist at Alcon specializing in AI/ML, Computer Vision, and Digital Twin technologies for ophthalmology and surgical applications",
   openGraph: {
-    title: "Nikhil Scaria | Full Stack Developer",
-    description: "Full-stack developer with a love for clean UI and fast apps",
+    title: "Nikhil Scaria | Senior Data Scientist & AI/ML Engineer",
+    description: "Senior Data Scientist at Alcon specializing in AI/ML, Computer Vision, and Digital Twin technologies for ophthalmology and surgical applications",
     type: "website",
   },
 };
