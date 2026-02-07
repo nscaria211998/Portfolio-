@@ -72,7 +72,9 @@ const itemVariants = {
 
 export default function TechStack() {
   return (
-    <section id="stack" className="py-24 px-4 bg-card/50">
+    <section id="stack" className="py-24 px-4 relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute inset-0 bg-gradient-to-b from-indigo-50/50 via-transparent to-purple-50/50 dark:from-indigo-950/20 dark:via-transparent dark:to-purple-950/20" />
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -99,10 +101,12 @@ export default function TechStack() {
             <motion.div
               key={category.title}
               variants={itemVariants}
-              className="p-6 bg-background border border-border rounded-2xl hover:border-accent/50 transition-colors"
+              className="p-6 bg-card/80 backdrop-blur-sm border border-border/50 rounded-2xl shadow-lg shadow-indigo-500/5 hover:shadow-xl hover:shadow-indigo-500/10 hover:border-accent/30 transition-all"
             >
               <div className="flex items-center gap-3 mb-6">
-                <span className="text-2xl">{category.icon}</span>
+                <div className="p-2 bg-gradient-to-br from-indigo-100 to-purple-100 dark:from-indigo-900/50 dark:to-purple-900/50 rounded-xl">
+                  <span className="text-2xl">{category.icon}</span>
+                </div>
                 <h3 className="text-xl font-semibold">{category.title}</h3>
               </div>
 
@@ -110,11 +114,11 @@ export default function TechStack() {
                 {category.technologies.map((tech) => (
                   <div
                     key={tech.name}
-                    className="px-4 py-2 bg-card border border-border rounded-full text-sm hover:border-accent/50 transition-colors cursor-default flex items-center gap-2"
+                    className="px-4 py-2 bg-gradient-to-r from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 border border-border/50 rounded-full text-sm hover:border-accent/50 hover:shadow-md transition-all cursor-default flex items-center gap-2 font-medium"
                   >
                     <div
-                      className="w-2 h-2 rounded-full"
-                      style={{ backgroundColor: tech.color }}
+                      className="w-2.5 h-2.5 rounded-full shadow-sm"
+                      style={{ backgroundColor: tech.color, boxShadow: `0 0 8px ${tech.color}40` }}
                     />
                     {tech.name}
                   </div>

@@ -16,11 +16,13 @@ const badges = [
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center px-4 overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-blue-500/10 via-transparent to-transparent" />
+      {/* Decorative blobs */}
+      <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-indigo-400/30 to-purple-400/30 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-r from-pink-400/20 to-indigo-400/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-indigo-500/10 via-purple-500/10 to-pink-500/10 rounded-full blur-3xl" />
 
-      {/* Animated grid */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.03)_1px,transparent_1px)] bg-[size:64px_64px]" />
+      {/* Animated grid with enhanced opacity */}
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(99,102,241,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(99,102,241,0.05)_1px,transparent_1px)] bg-[size:64px_64px]" />
 
       {/* Main content */}
       <motion.div
@@ -65,13 +67,13 @@ export default function Hero() {
         >
           <a
             href="#contact"
-            className="px-8 py-3 bg-accent text-white rounded-full font-medium hover:bg-accent/80 transition-all hover:scale-105"
+            className="px-8 py-3 bg-gradient-to-r from-indigo-500 to-purple-500 text-white rounded-full font-medium hover:from-indigo-600 hover:to-purple-600 transition-all hover:scale-105 shadow-lg shadow-indigo-500/25"
           >
-            Start Project
+            Get in Touch
           </a>
           <a
             href="#about"
-            className="px-8 py-3 border border-border rounded-full font-medium hover:bg-card transition-all hover:scale-105"
+            className="px-8 py-3 bg-card/80 backdrop-blur-sm border border-border rounded-full font-medium hover:border-accent/50 hover:shadow-lg transition-all hover:scale-105"
           >
             Learn More
           </a>
@@ -84,10 +86,10 @@ export default function Hero() {
           {[...badges, ...badges].map((badge, index) => (
             <div
               key={index}
-              className="flex-shrink-0 mx-3 px-4 py-2 bg-card border border-border rounded-full flex items-center gap-2"
+              className="flex-shrink-0 mx-3 px-5 py-2.5 bg-card/80 backdrop-blur-sm border border-border/50 rounded-full flex items-center gap-2 shadow-sm hover:shadow-md hover:border-accent/30 transition-all"
             >
-              <span>{badge.emoji}</span>
-              <span className="text-sm whitespace-nowrap">{badge.text}</span>
+              <span className="text-lg">{badge.emoji}</span>
+              <span className="text-sm font-medium whitespace-nowrap">{badge.text}</span>
             </div>
           ))}
         </div>

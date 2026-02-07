@@ -17,8 +17,8 @@ export default function About() {
           {/* Profile Image */}
           <div className="relative">
             <div className="relative w-full aspect-square max-w-md mx-auto">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-3xl blur-3xl" />
-              <div className="relative w-full h-full bg-card border border-border rounded-3xl overflow-hidden flex items-center justify-center">
+              <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/30 to-purple-500/30 rounded-3xl blur-3xl animate-pulse" />
+              <div className="relative w-full h-full bg-card/80 backdrop-blur-sm border border-border/50 rounded-3xl overflow-hidden flex items-center justify-center shadow-xl shadow-indigo-500/10">
                 <div className="text-8xl">👨‍💻</div>
               </div>
             </div>
@@ -27,22 +27,22 @@ export default function About() {
             <motion.div
               animate={{ y: [0, -10, 0] }}
               transition={{ duration: 3, repeat: Infinity }}
-              className="absolute -right-4 top-1/4 glass px-4 py-3 rounded-xl"
+              className="absolute -right-4 top-1/4 glass px-4 py-3 rounded-xl shadow-lg shadow-indigo-500/10"
             >
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-accent" />
-                <span className="text-sm">Fort Worth, TX</span>
+                <span className="text-sm font-medium">Fort Worth, TX</span>
               </div>
             </motion.div>
 
             <motion.div
               animate={{ y: [0, 10, 0] }}
               transition={{ duration: 3, repeat: Infinity, delay: 1 }}
-              className="absolute -left-4 bottom-1/4 glass px-4 py-3 rounded-xl"
+              className="absolute -left-4 bottom-1/4 glass px-4 py-3 rounded-xl shadow-lg shadow-indigo-500/10"
             >
               <div className="flex items-center gap-2">
                 <Calendar className="w-4 h-4 text-accent" />
-                <span className="text-sm">Since 2022</span>
+                <span className="text-sm font-medium">Since 2022</span>
               </div>
             </motion.div>
           </div>
@@ -74,17 +74,17 @@ export default function About() {
               </p>
 
               <div className="flex flex-wrap gap-4">
-                <div className="flex items-center gap-2 px-4 py-2 bg-card border border-border rounded-full">
+                <div className="flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-indigo-50 to-purple-50 border border-border/50 rounded-full shadow-sm hover:shadow-md transition-all">
                   <Code className="w-4 h-4 text-accent" />
-                  <span className="text-sm">MLOps Expert</span>
+                  <span className="text-sm font-medium">MLOps Expert</span>
                 </div>
-                <div className="flex items-center gap-2 px-4 py-2 bg-card border border-border rounded-full">
+                <div className="flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-indigo-50 to-purple-50 border border-border/50 rounded-full shadow-sm hover:shadow-md transition-all">
                   <span>👁️</span>
-                  <span className="text-sm">Computer Vision</span>
+                  <span className="text-sm font-medium">Computer Vision</span>
                 </div>
-                <div className="flex items-center gap-2 px-4 py-2 bg-card border border-border rounded-full">
+                <div className="flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-indigo-50 to-purple-50 border border-border/50 rounded-full shadow-sm hover:shadow-md transition-all">
                   <span>🏥</span>
-                  <span className="text-sm">Healthcare AI</span>
+                  <span className="text-sm font-medium">Healthcare AI</span>
                 </div>
               </div>
             </motion.div>
@@ -99,10 +99,12 @@ export default function About() {
           transition={{ delay: 0.4 }}
           className="mt-16 text-center"
         >
-          <blockquote className="text-2xl md:text-3xl font-light text-muted italic">
-            &ldquo;Transforming surgical precision through the power of AI.&rdquo;
-          </blockquote>
-          <p className="mt-4 text-accent">— Nikhil Scaria</p>
+          <div className="inline-block px-8 py-6 bg-card/80 backdrop-blur-sm border border-border/50 rounded-2xl shadow-lg shadow-indigo-500/5">
+            <blockquote className="text-2xl md:text-3xl font-light text-muted italic">
+              &ldquo;Transforming surgical precision through the power of AI.&rdquo;
+            </blockquote>
+            <p className="mt-4 text-accent font-medium">— Nikhil Scaria</p>
+          </div>
         </motion.div>
       </div>
     </section>

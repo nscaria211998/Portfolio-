@@ -116,15 +116,15 @@ export default function Projects() {
               variants={itemVariants}
               className="group relative"
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="absolute inset-0 bg-gradient-to-r from-indigo-500/20 to-purple-500/20 rounded-3xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <div
-                className={`relative grid md:grid-cols-2 gap-8 p-8 bg-card border border-border rounded-3xl hover:border-accent/50 transition-all ${
+                className={`relative grid md:grid-cols-2 gap-8 p-8 bg-card/80 backdrop-blur-sm border border-border/50 rounded-3xl shadow-lg shadow-indigo-500/5 hover:shadow-xl hover:shadow-indigo-500/10 hover:border-accent/30 transition-all ${
                   index % 2 === 1 ? "md:flex-row-reverse" : ""
                 }`}
               >
                 {/* Project Image/Placeholder */}
                 <div
-                  className={`relative aspect-video bg-background rounded-2xl overflow-hidden flex items-center justify-center border border-border ${
+                  className={`relative aspect-video bg-gradient-to-br from-indigo-50 to-purple-50 dark:from-indigo-950/30 dark:to-purple-950/30 rounded-2xl overflow-hidden flex items-center justify-center border border-border/50 ${
                     index % 2 === 1 ? "md:order-2" : ""
                   }`}
                 >
@@ -136,8 +136,10 @@ export default function Projects() {
                     />
                   ) : (
                     <div className="flex flex-col items-center gap-4 text-muted">
-                      <Folder className="w-16 h-16" />
-                      <span className="text-sm">Project Preview</span>
+                      <div className="p-4 bg-gradient-to-br from-indigo-500/10 to-purple-500/10 rounded-2xl">
+                        <Folder className="w-12 h-12 text-accent" />
+                      </div>
+                      <span className="text-sm font-medium">Project Preview</span>
                     </div>
                   )}
                   {/* Hover overlay */}
@@ -175,7 +177,7 @@ export default function Projects() {
                     {project.technologies.map((tech) => (
                       <span
                         key={tech}
-                        className="px-3 py-1 text-sm bg-background border border-border rounded-full"
+                        className="px-3 py-1 text-sm bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-950/50 dark:to-purple-950/50 border border-border/50 rounded-full font-medium"
                       >
                         {tech}
                       </span>
@@ -226,7 +228,7 @@ export default function Projects() {
             <motion.div
               key={project.title}
               variants={itemVariants}
-              className="group p-6 bg-card border border-border rounded-2xl hover:border-accent/50 transition-all hover:-translate-y-2"
+              className="group p-6 bg-card/80 backdrop-blur-sm border border-border/50 rounded-2xl shadow-lg shadow-indigo-500/5 hover:shadow-xl hover:shadow-indigo-500/10 hover:border-accent/30 transition-all hover:-translate-y-2"
             >
               <div className="flex items-center justify-between mb-4">
                 <Folder className="w-10 h-10 text-accent" />
